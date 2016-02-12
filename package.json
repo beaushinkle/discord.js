@@ -1,0 +1,50 @@
+{
+  "name": "discord.js",
+  "version": "5.2.0",
+  "description": "A way to interface with the Discord API",
+  "main": "./entrypoint.js",
+  "scripts": {
+    "test": "eslint *.js lib test && node test/lib-test.js",
+    "start": "node examples/hubot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hydrabolt/discord.js.git"
+  },
+  "keywords": [
+    "discord",
+    "api",
+    "bot",
+    "client",
+    "node",
+    "discordapp"
+  ],
+  "author": "Amish Shah <amishshah.2k@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/hydrabolt/discord.js/issues"
+  },
+  "homepage": "https://github.com/hydrabolt/discord.js#readme",
+  "dependencies": {
+    "fs-extra": "^0.26.2",
+    "superagent": "^1.5.0",
+    "ws": "^0.8.1",
+    "node-bing-api": "^2.3.0"
+  },
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "eslint": "^1.10.3",
+    "grunt": "^0.4.5",
+    "grunt-babel": "<6.0.0",
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-uglify": "^0.11.0",
+    "load-grunt-tasks": "^3.3.0",
+    "mocha": "^2.3.4"
+  },
+  "optionalDependencies": {
+    "node-opus": "^0.1.11"
+  },
+  "engines": {
+    "node": ">=0.12.7"
+  }
+}
