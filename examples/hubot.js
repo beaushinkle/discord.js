@@ -36,13 +36,6 @@ bot.on("message", function (msg) {
     var response = "http://champion.gg/champion/" + content.substring(6);
     bot.sendMessage(msg, response)
   }
-
-  if (content === "pee") {
-    console.log("kuma went pee!");
-    setTimeout(function() {
-       bot.sendMessage(msg, "take kuma out");
-    }, 1000 * 60 * 90);
-  }
 });
 
 bot.login(process.argv[2], process.argv[3]);
