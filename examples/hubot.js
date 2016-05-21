@@ -21,11 +21,11 @@ Array.prototype.chooseRandom = function() {
 };
 
 bot.on("message", function (msg) {
-  var content = msg.content
+  var content = msg.content.toLowerCase();
   if (content.substring(0, 9) === "image me ") {
     var query = content.substring(9);
     console.log("received: " + query)
-    Bing.images(query, {skip: 50}, function(error, res, body){
+    Bing.images(query, {skip: 50}, function(error, res, body) {
       var results = body['d']['results'];
       var response = results.chooseRandom()['MediaUrl'];
       bot.sendMessage(msg, response)
